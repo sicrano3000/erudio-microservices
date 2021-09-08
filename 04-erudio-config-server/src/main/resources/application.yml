@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: erudio-config-server
+  #profiles:
+  #  active:
+  #  - native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sicrano3000/erudio-config-server
+          #username: username
+          #password: password
+          default-label: main
+          search-paths:
+          - 'greeting-service*'
